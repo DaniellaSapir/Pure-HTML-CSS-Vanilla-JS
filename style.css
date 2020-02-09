@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    background: url('../images/city.jpg') center/cover no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Lemonada', cursive;*/
+    color: rgba(84,84,84,1)
+}
+.container {
+    display: flex;
+    flex-flow: column;
+}
+/*NAVBAR*/
+.nav_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+.nav_header {
+    background: rgba(84,84,84,0.7);
+    display: flex;
+    /*separate between items along the main axis of flex container*/
+    /*If font-size is not explicitly defined in root element then 1rem will be equal to the default
+    font-size provided by the browser (usually 16px)*/
+    /*padding: 0.5rem 1rem;*/
+    border-bottom: 0.3rem solid #6baa75;
+}
+.nav_links {
+    display: flex;
+    list-style-type: none;
+    transition: all 2s ease;
+    width: 0;
+    overflow: hidden;
+}
+.navbar li {
+    flex: 3;
+    text-align: center;
+}
+i {
+    font-size: x-large;
+}
+.collapsed {
+    width: 60%;
+}
+.nav_link {
+    padding: 1rem;
+    /*background: #69747c;*/
+    color: #6baa75;
+    display: inline-block;
+    text-decoration-line: none;
+    font-size: 1rem;
+    transition: all 2s ease;
+    width: 100%;
+    height: 100%;
+}
+/*NAV Button*/
+.nav_btn {
+    border: 0.3rem solid #6baa75;
+    /*we want the button to be aligned with the logo in the center*/
+    align-self: center;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    height: 0.3rem;
+    width: 1.7rem;
+    margin: 0.3rem;
+    background: #6baa75;
+    transition: all 2s ease;
+}
+.nav_bars_move .bar1 {
+    -ms-transform: rotate(-45deg) translate(-0.4rem, 0.4rem);
+    transform: rotate(-45deg) translate(-0.4rem, 0.4rem);
+}
+.nav_bars_move .bar2 {
+    opacity: 0;
+}
+.nav_bars_move .bar3 {
+    -ms-transform: rotate(45deg) translate(-0.4rem, -0.4rem);
+    transform: rotate(45deg) translate(-0.4rem, -0.4rem);
+}
+
+.nav_link:hover {
+    padding-left: 2rem;
+    /*background: #545454;*/
+    background: rgba(84,84,84,0.8);
+}
+
+/*FORM*/
+.form_wrapper {
+    width: 40%;
+    margin: 0 auto;
+    align-items: center;
+}
+.form_box {
+    display: flex;
+    background: rgba(99,99,99,0.4);
+    padding: 1.5em;
+    border-radius: 25px;
+    margin-top: 5em;
+}
+.comment_box {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+.comment_box textarea {
+    flex: 1;
+    min-width: 10em;
+    background: transparent;
+    color: #fff;
+    padding: 1em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.info_box {
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+}
+.info_box input {
+    width: 100%;
+}
+.info_box button {
+    background: chocolate;
+}
+.info_box input, .info_box button {
+    padding: 0.6em;
+    margin-bottom: 1em;
+    border-radius: 30px;
+    color: #fff;
+    background: transparent;
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.wrapper err_msg {
+
+}
+
+/*layout*/
+/*.container {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+/*.container div {*/
+/*    border: 1px black solid;*/
+/*    padding: 1rem;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: wrap;*/
+/*    min-height: calc(100vh - 64px);;*/
+/*}*/
+/*.box1 {*/
+/*    flex: 2;*/
+/*    order: 2;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*.box2 {*/
+/*    flex: 1;*/
+/*    order: 1;*/
+/*}*/
+/*.box3 {*/
+/*    flex: 1;*/
+/*    order: 3;*/
+/*}*/
