@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniella's Task</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada|Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cc092925f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="nav_wrapper">
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="nav_header">
+                <div class="nav_btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul class="nav_links ">
+                    <li><a href="#" class="nav_link "><i class="fas fa-home"></i></a></li>
+                    <li><a href="#" class="nav_link "><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="nav_link "><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#" class="nav_link "><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#" class="nav_link "><i class="fas fa-calendar-alt"></i></a></li>
+                    <li><a href="#" class="nav_link "><i class="fas fa-user-plus"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!--    Typewriter-->
+    <div id="twrap"></div>
+
+<!--Conversion Form-->
+    <div class="form_wrapper">
+        <form method="POST" action="/data" class="form_box">
+            <div class="comment_box">
+                <label for="comment"><b>Max 100 characters(optional)</b></label>
+                <textarea maxlength="100" id="comment" name="comment" placeholder="Please comment .."></textarea>
+            </div>
+            <div class="info_box">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="email"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required >
+
+                <label for="name"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Your Full Name" name="name" id="name"
+                       pattern = "^[a-zA-Z\s]+$" required>
+
+                <label for="phone"><b>Phone (optional)</b></label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number xxxxxxx">
+
+                <label for="workshop"><b>Select Workshop</b></label>
+                <select id="workshop" name="workshop" style= "color:rgba(84,84,84,1); background:transparent;">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <button type="submit" style="background:#6baa75;"><b>Submit</b></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
